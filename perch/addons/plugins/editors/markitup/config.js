@@ -32,8 +32,8 @@ markdownSettings = {
 	onShiftEnter:		{keepDefault:false, openWith:'\n\n'},
 	markupSet: [
 		{name:'Heading', key:'1', className:'fa fa-header', dropMenu: [
-            {name:'Heading 1', className:'fa fa-header', closeWith:function(markItUp) { return miu.markdownTitle(markItUp, '='); }, placeHolder:'Your title here...' },
-            {name:'Heading 2', className:'fa fa-header', closeWith:function(markItUp) { return miu.markdownTitle(markItUp, '-'); }, placeHolder:'Your title here...' },
+            {name:'Heading 1', className:'fa fa-header', openWith:'# ', 	 placeHolder:'Your title here...' },
+            {name:'Heading 2', className:'fa fa-header', openWith:'## ', 	 placeHolder:'Your title here...' },
             {name:'Heading 3', className:'fa fa-header', openWith:'### ', 	 placeHolder:'Your title here...' },
             {name:'Heading 4', className:'fa fa-header', openWith:'#### ', 	 placeHolder:'Your title here...' },
             {name:'Heading 5', className:'fa fa-header', openWith:'##### ',  placeHolder:'Your title here...' },
