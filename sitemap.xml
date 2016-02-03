@@ -1,0 +1,15 @@
+<?php header('Content-type: application/xml');
+    include('perch/runtime.php');
+    perch_pages_navigation(array(
+        'template'=>'sitemap.html',
+        'flat'=>true,
+        'include-hidden'=>true
+    ));
+
+	perch_blog_custom(array(
+  		'template'=>'blog/sitemap.html',
+  		'sort'=>'postDateTime',
+  		'sort-order'=>'DESC',
+      'count'=>1000
+	));
+?>

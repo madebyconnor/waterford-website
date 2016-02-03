@@ -1,0 +1,20 @@
+<div class="clear images">
+	<div class="layout-331">
+		<a class="image-wrapper" data-caption="<perch:blog id="threeimagecaption" type="textarea" size="s" label="Caption" help="An optional caption for the photo. Maximum 200 characters." count="chars" order="4"/>" href="<perch:blog id="threeimageone" type="image" width="1440" height="1440" required="true" label="Photo 1" />">
+			<div class="image image-left" style="background: url(<perch:blog id="threeimageone" type="image" width="400" order="1"/>)"></div>
+		</a>
+	</div>
+	<div class="layout-331">
+		<a class="image-wrapper" data-caption="<perch:blog id="threeimagecaption" type="textarea"/>" href="<perch:blog id="threeimagetwo" type="image" width="1440" height="1440" label="Photo 2" required="true" />">
+			<div class="image image-middle" style="background: url(<perch:blog id="threeimagetwo" type="image" width="400" order="2" />)"></div>
+		</a>
+	</div>
+	<div class="layout-331">
+		<a class="image-wrapper" data-caption="<perch:blog id="threeimagecaption" type="textarea"/>" href="<perch:blog id="threeimagethree" type="image" width="1440" height="1440" label="Photo 3" required="true" />">
+			<div class="image image-right" style="background: url(<perch:blog id="threeimagethree" type="image" width="400" order="3" />)"></div>
+		</a>
+	</div>
+</div>
+<perch:if exists="threeimagecaption">
+	<p class="image-caption small"><perch:blog id="threeimagecaption" type="textarea" chars="200" append"…" /></p>
+</perch:if>

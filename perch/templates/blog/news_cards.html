@@ -1,0 +1,23 @@
+<div class="card-ctnr layout-421">
+	<a class="no-link" href="<perch:blog id="postURL" />">
+		<div class="card-3 card-3-hover">
+			<div class="fp-card-hero">
+				<div class="card-image" style="background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(<perch:blog id="image" />)">
+				</div>
+				<h1 class="card-header small"><perch:blog id="postTitle" type="text" chars="40" append="…
+"  /></h1>
+			</div>
+			<div class="card-content small">
+			    <p class="small"><perch:blog id="postDescHTML" type="textarea" chars="125" append="…" striptags="true" /></p>
+			</div>
+			<div class="card-footer small">
+			    <p class="date float-left"><perch:blog id="postDateTime" format="%B %d" /></p>
+		        <ul id="social" class="float-right">
+					<li class="social-item"><a class="social-icon facebook no-link" href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=http://waterford.sz<perch:blog id="postURL" />', 'Facebook', 'width=600, height=400' )"><i class="icon-facebook"></i></a></li>
+					<li class="social-item"><a class="social-icon twitter no-link" href="javascript:window.open('http://twitter.com/share?text=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&url=http://waterford.sz<perch:blog id="postURL" />', 'Twitter', 'width=600, height=400' )"><i class="icon-twitter"></i></a></li>
+					<li class="social-item"><a class="social-icon email no-link" href="mailto:?subject=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&amp;body=http://waterford.sz<perch:blog id="postURL" />"><i class="icon-email"></i></a></li>
+					</ul>
+			</div>
+		</div>
+	</a>
+</div>

@@ -1,0 +1,56 @@
+body #content #main-panel form input.order {
+	width: 3em;
+}
+
+body #content #main-panel table.d tr td a.img:link,
+body #content #main-panel table.d tr td a.img:visited {
+	border: 0;
+	text-decoration: none;
+}
+
+table.d th.img {
+	width: 130px;
+}
+
+table.imglist td {
+	vertical-align: top;
+}
+
+div.plupload_header_content {
+	display: none;
+}
+
+ul.image-list {
+	margin: 0 0 0 10px;
+	list-style: none;
+}
+
+ul.image-list li {
+	display: block;
+	float: left;
+	margin: 0 5px 5px 0;
+	position: relative;
+}
+
+ul.image-list li input {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	opacity: 0.5;
+}
+
+ul.image-list li img {
+	display: block;
+}
+
+ul.image-list li:hover input,
+ul.image-list li input:checked {
+	opacity: 1;
+}
+
+
+body #content #main-panel ul.image-list li a.img:link,
+body #content #main-panel ul.image-list li a.img:visited {
+	border: none;
+	text-decoration: none;
+}

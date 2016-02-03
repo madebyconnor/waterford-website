@@ -1,0 +1,6 @@
+<perch:before><ul class="gn-subnav-list"></perch:before>
+	<li class="gn-sub-tab"<perch:if exists="current_page"> id="gn-selected"</perch:if><perch:if exists="ancestor_page"> id="gn-ancestor"</perch:if>>
+	    <a class="gn-sub" href="<perch:pages id="pagePath" />" title="<perch:pages id="pageNavText" />"><perch:pages id="pageNavText" /></a>
+	</li>
+	<li class="gn-sub-bullet">&bull;</li>
+<perch:after></ul></perch:after>

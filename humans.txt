@@ -1,0 +1,30 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+
+  Designer & Developer:
+  Connor Bär, Germany
+  connor.baer@me.com
+
+  Developer:
+  Nicolai Davies, Denmark/UK
+  mail@nicolai.io
+
+  Site: waterford.sz
+
+  Location: Mbabane, Kingdom of Swaziland
+
+
+/* THANKS */
+
+  Advancement Office and IT Centre Guys at Waterford Kamhlaba
+
+
+/* SITE */
+
+  Standards: HTML5 and CSS3
+
+  Components: jQuery, Slick, Slick Lightbox and Headroom.js
+
+  Software: Adobe Illustrator, Adobe InDesign, Sketch, Atom, Sublime, Gulp and Myth

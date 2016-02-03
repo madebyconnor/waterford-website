@@ -1,0 +1,35 @@
+<perch:form class="contact-form f-tq" id="contact" method="post" app="perch_forms">
+	<div class="f-input-wrpr">
+		<perch:input class="f-input" type="text" id="name" required="true" placeholder="What's your name?" title="Your name. Required." antispam="name" />
+		<span class="f-underline"></span>
+		<perch:error for="name" type="required">
+			<span class="error">Please tell us your name.</span>
+		</perch:error>
+	</div>
+	<div class="f-input-wrpr">
+		<perch:input class="f-input" type="email" id="email" required="true" placeholder="What's your email?" title="Your email address. Required." antispam="email" />
+		<span class="f-underline"></span>
+		<perch:error for="email" type="format">
+			<span class="error">Please enter a valid email address.</span>
+		</perch:error>
+		<perch:error for="email" type="required">
+			<span class="error">Please tell us your email address.</span>
+		</perch:error>
+	</div>
+	<div class="f-input-wrpr">
+		<perch:input class="f-input" type="textarea" id="message" required="true" placeholder="How can we help you?" rows="5" title="Write your message here. Required." antispam="body" />
+		<span class="f-underline"></span>
+		<perch:error for="message" type="required">
+			<span class="error">Don't forget to write your message!</span>
+		</perch:error>
+	</div>
+	<perch:input class="b-tq" id="submit" type="submit" value="Send message &#8250;" />
+
+	<perch:success>
+	<div class="contact-form">
+		<h3 class="contact-header">Thank you for contacting us.</h3>
+    	<p class="medium">We appreciate that you have taken the time to write to us. We will get back to you very soon.</p>
+    	<p class="medium">For urgent inquiries, please call us on one of our phone numbers.</p>
+    </div>
+	</perch:success>
+</perch:form>

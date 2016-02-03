@@ -1,0 +1,10 @@
+<a href="<perch:content id="side-link" type="text" label="Slide Link" />" class="no-link">
+	<div class="sliders-hero">
+		<div class="sliders-slide card-image" style="background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(<perch:content id="side-image" type="image" label="Slide background image" required="true" width="400" height="400" help="Should relate to the slide topic. Minimum 1500px, maximum 2500px wide."/>);">
+		</div>
+		<div class="sliders-content">
+			<h1 class="sliders-side-header white medium"> <perch:content id="side-header" type="text" label="Slide header" required="true" chars="35" help="One to four words. 35 characters maximum." /> &#8250;</h1>
+			<p class="white medium slide-content"><perch:content id="side-text" type="text" label="Slide text" required="true" chars="150" help="A concise and enticing description. 150 characters maximum." append="…" /></p>
+		</div>
+	</div>
+</a>
