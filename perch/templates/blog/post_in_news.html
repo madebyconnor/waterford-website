@@ -1,0 +1,32 @@
+<div class="card-ctnr">
+  <div class="card-3 card-3-hover full-width">
+    <a class="no-link" href="<perch:blog id="postURL" />">
+      <header class="blog-hero">
+        <div class="card-image" style="background: url(<perch:blog id="image" type="image" />)">
+        </div>
+        <h1 class="card-header"><perch:blog id="postTitle" /></h1>
+      </header>
+      <div class="card-footer">
+        <p class="date float-left"><perch:blog id="postDateTime" format="%B %d, %Y" /></p>
+        <ul id="social" class="float-right">
+          <li class="social-item"><a class="social-icon facebook no-link" href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=http://waterford.sz<perch:blog id="postURL" />', 'Facebook', 'width=600, height=400' )"><i class="icon-facebook"></i></a></li>
+          <li class="social-item"><a class="social-icon twitter no-link" href="javascript:window.open('http://twitter.com/share?text=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&url=http://waterford.sz<perch:blog id="postURL" />', 'Twitter', 'width=600, height=400' )"><i class="icon-twitter"></i></a></li>
+          <li class="social-item"><a class="social-icon email no-link" href="mailto:?subject=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&amp;body=http://waterford.sz<perch:blog id="postURL" />"><i class="icon-email"></i></a></li>
+        </ul>
+      </div>
+      <div class="card-content">
+        <p><perch:blog id="postDescHTML" type="textarea" words="50" append="…" striptags="true" /></p>
+      </div>
+    </a>
+  </div>
+</div>
+<perch:after>
+  <perch:if exists="paging">
+  <div class="full-width">
+    <div class="paging">
+      <p class="small text-center grey-d"><perch:if exists="not_first_page"><a class="link" href="<perch:blog id="prev_url" encode="false" />">&#8249; Previous</a></perch:if> Page <perch:blog id="current_page" /> of <perch:blog id="number_of_pages" /><perch:blog id="page_links" encode="false" /><perch:if exists="not_last_page"> <a class="link" href="<perch:blog id="next_url" encode="false" />">Next &#8250;</a></p>
+      </perch:if>
+    </div>
+  </div>
+  </perch:if>
+</perch:after>

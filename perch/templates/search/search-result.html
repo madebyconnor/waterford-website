@@ -1,0 +1,49 @@
+<perch:before>
+    <div class="full-width">
+        <perch:if exists="search_key">
+            <p class="search-keyword grey-d text-left small">Search results for &#8220;<perch:search id="search_key" />&#8221;:</p>
+        <perch:else />
+        </perch:if>
+        <ul>
+</perch:before>
+
+            <li class="card-3 card-3-hover search-result-card">
+                <a class="no-link" href="<perch:search id="result_url" />">
+                    <div class="card-content">
+                        <h1 class="medium"><span itemprop="headline"><perch:search id="result_title" /></span></h1>
+                        <p class="small tq search-url"><span itemprop="url"><perch:search id="url" /></span></p>
+                        <perch:if exists="result_excerpt"><span itemprop="description"><p class="excerpt medium">&hellip;<perch:search id="result_excerpt" encode="false" />&hellip;</p></span></perch:if>
+                    </div>
+                </a>
+            </li>
+
+<perch:after>
+        </ul>
+        <perch:if exists="paging">
+            <div class="paging search-result-card">
+                <p class="small text-center grey-d"><perch:if exists="not_first_page"><a class="link" href="<perch:search id="prev_url" encode="false" />">&#8249; Previous</a></perch:if> Page <perch:search id="current_page" /> of <perch:search id="number_of_pages" />
+                <perch:if exists="not_last_page"><a class="link" href="<perch:search id="next_url" encode="false" />">Next &#8250;</a></perch:if></p>
+            </div>
+        </perch:if>
+    </div>
+</perch:after>
+
+
+
+<perch:noresults>
+    <div class="full-width">
+        <perch:if exists="search_key">
+            <p class="search-keyword grey-d text-left small">Search results for &#8220;<perch:search id="search_key" />&#8221;:</p>
+        <perch:else />
+        </perch:if>
+        <div class="card-3">
+            <perch:if exists="search_key">
+                <div class="card-content">
+                    <h1 class="medium text-no-cap">Nothing was found for &#8220;<perch:search id="search_key" />&#8221;.</h1>
+                    </br>
+                    <p class="medium">It happens. Double check your spelling or try a less specific keyword, then go again! Or you can <a href="https://www.google.com/search?q=waterford%20kamhlaba%20<perch:search id="search_key" />" target="_blank" >search for it on Google</a>.</p>
+                </div>
+            </perch:if>
+        </div>
+    </div>
+</perch:noresults>

@@ -1,0 +1,29 @@
+.blog-hero {
+  background: var(--grey-d);
+  position: relative;
+  height: 16em;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ALERT */
+
+.notice {
+  width: 100%;
+  overflow: hidden;
+  background: var(--gradient-vp);
+  transition: box-shadow var(--ts-m);
+}
+
+.notice:hover {
+  box-shadow: var(--shadow-eight);
+}
+
+.notice-ctnr {
+  max-width: var(--min-width);
+  padding: 0.9rem 0;
+}
+
+.notice-bold {
+  font-weight: var(--sans-serif-thick);
+}

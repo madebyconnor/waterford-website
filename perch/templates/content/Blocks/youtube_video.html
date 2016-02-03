@@ -1,0 +1,9 @@
+<div class="image-wrapper">
+	<div class="image video"><perch:content id="video" type="youtube" label="Youtube URL" help="The full URL of the YouTube video." output="embed" modestbranding="1" required="true" /></div>
+</div>
+
+<perch:if exists="videocaption">
+<p class="image-caption small"><perch:content id="videocaption" type="textarea" size="s" label="Caption" help="An optional caption for the video. Maximum 200 characters. If no caption is provided, the title of the YouTube video will be displayed." chars="200" count="chars" append"…" /></p>
+<perch:else />
+	<p class="image-caption small"><perch:content id="video" type="youtube" chars="140" append="…" output="title" /> by <a href="<perch:content id="video" type="youtube"output="url" />" target="_blank"><perch:content id="video" type="youtube" chars="15" append="…" output="user_name" /></a>.</p>
+</perch:if>

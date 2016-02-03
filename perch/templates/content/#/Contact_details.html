@@ -1,0 +1,51 @@
+<perch:if exists="firstPhone OR secondPhone">
+    <h3 class="contact-header">Phone</h3>
+
+	<perch:if exists="firstPhone">
+	    <p class="medium"><perch:content id="firstPhone" type="text" label="Phone number" divider-before="Phone" /></p>
+	</perch:if>
+
+	<perch:if exists="secondPhone">
+	    <p class="medium"><perch:content id="secondPhone" type="text" label="Alternate phone number" /></p>
+	</perch:if>
+</perch:if>
+
+
+<perch:if exists="firstEmail OR secondEmail">
+    <h3 class="contact-header">Email</h3>
+
+	<perch:if exists="firstEmail">
+	    <p class="medium"><a class="link" href="mailto:<perch:content id="firstEmail" type="text" label="Email address" divider-before="Email" />" target="_blank"><perch:content id="firstEmail" type="text" label="Email address" required="true" /> &#8250;</a></p>
+	</perch:if>
+	<perch:if exists="secondEmail">
+	    <p class="medium"><a class="link" href="mailto:<perch:content id="secondEmail" type="text" label="Alternate Email address" />" target="_blank"><perch:content id="secondEmail" type="text" label="Alternate email address" /> &#8250;</a></p>
+	</perch:if>
+</perch:if>
+
+<perch:if exists="schoolName OR streetPoBox OR city OR postalCode OR country">
+    <h3 class="contact-header">Address</h3>
+
+    <perch:if exists="schoolName">
+    	<p class="medium"><perch:content id="schoolName" type="text" label="School name" divider-before="Address" /></p>
+    </perch:if>
+    <perch:if exists="streetPoBox">
+    	<p class="medium"><perch:content id="streetPoBox" type="text" label="Street or PO box" /></p>
+    </perch:if>
+
+    <p class="medium">
+	    <perch:if exists="city">
+	    	<perch:content id="city" type="text" label="City"  />
+	    </perch:if>
+	    <perch:if exists="postalCode">
+	    	<perch:content id="postalCode" type="text" label="Postal code" />
+	    </perch:if>
+	</p>
+
+    <perch:if exists="country">
+    	<p class="medium"><perch:content id="country" type="text" label="Country" /></p>
+    </perch:if>
+</perch:if>
+
+<perch:if exists="directions">
+    <p class="medium contact-header"><a class="link" href="<perch:content id="directions" type="text" label="Link to directions"  help="A link to Google Maps with directions to Waterford Kamhlaba." />" target="_blank" >Get directions &#8250;</a></p>
+</perch:if>

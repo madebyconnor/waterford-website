@@ -1,0 +1,23 @@
+<div class="card-ctnr layout-321">
+	<div class="card-3">
+	  	<div class="card-hero">
+	  		<div class="card-image video"><perch:content id="video" type="youtube" label="Youtube URL" help="The full URL of the YouTube video." output="embed" modestbranding="1" required="true" /></div>
+	    </div>
+	    <div class="card-content">
+	    	<perch:if exists="videodescription">
+	    		<p class="small"><perch:content id="videodescription" type="textarea" size="s" label="Caption" help="An optional caption for the video. Maximum 160 characters. If no caption is provided, the description of the YouTube video will be displayed." chars="160" count="chars" append"…" /></p>
+	    	<perch:else />
+	    		<p class="small"><perch:content id="video" type="youtube" chars="160" append="…" output="description" /></p>
+	    	</perch:if>
+	    </div>
+
+	    <div class="card-footer small">
+		    <p class="date float-left"><perch:content id="video" type="youtube" chars="15" append="…" output="user_name" /></p>
+	        <ul id="social" class="float-right">
+				<li class="social-item"><a class="social-icon facebook no-link" href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=<perch:content id="video" type="youtube" output="url" />', 'Facebook', 'width=600, height=400' )"><i class="icon-facebook"></i></a></li>
+				<li class="social-item"><a class="social-icon twitter no-link" href="javascript:window.open('http://twitter.com/share?text=<perch:content id="video" type="youtube" output="title" />&url=<perch:content id="video" type="youtube" output="url" />', 'Twitter', 'width=600, height=400' )"><i class="icon-twitter"></i></a></li>
+				<li class="social-item"><a class="social-icon email no-link" href="mailto:?subject=<perch:content id="video" type="youtube" output="title" />&amp;body=<perch:content id="video" type="youtube" output="url" />"><i class="icon-email"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</div>

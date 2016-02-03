@@ -1,0 +1,8 @@
+<div class="images">
+	<a class="image-wrapper" href="<perch:blog id="oneimageone" type="image" label="Photo" required="true" width="1440" height="1440" />" data-caption="<perch:blog id="oneimagecaption" type="textarea" size="s" label="Caption" help="An optional caption for the photo. Maximum 200 characters." chars="200" count="chars" append"…" order="2" />" >
+		<div class="image" style="background: url(<perch:blog id="oneimageone" type="image" width="1440" order="1" />)"></div>
+	</a>
+</div>
+<perch:if exists="oneimagecaption">
+	<p class="image-caption small"><perch:blog id="oneimagecaption" type="textarea" chars="200" append"…" /></p>
+</perch:if>

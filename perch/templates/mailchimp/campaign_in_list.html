@@ -1,0 +1,27 @@
+<div class="card-ctnr">
+  	<div class="card-3 card-3-hover full-width">
+    	<a class="no-link" href="<perch:mailchimp id="campaignURL" type="text" />">
+      		<div class="card-content">
+      			<h1 class="text-no-cap medium"><perch:mailchimp id="campaignSubject" type="text" /></h1>
+            <!-- <p class="small"><perch:mailchimp id="campaignHTML" type="text" />hello</p> -->
+          </div>
+      		<div class="card-footer">
+        		<p class="date float-left"><perch:mailchimp id="campaignSendTime" type="date" format="F d, Y" /></p>
+        		<ul id="social" class="float-right">
+          			<li class="social-item"><a class="social-icon facebook no-link" href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=http://waterford.sz<perch:mailchimp id="campaignURL" type="text" />', 'Facebook', 'width=600, height=400' )"><i class="icon-facebook"></i></a></li>
+          			<li class="social-item"><a class="social-icon twitter no-link" href="javascript:window.open('http://twitter.com/share?text=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&url=http://waterford.sz<perch:mailchimp id="campaignURL" type="text" />', 'Twitter', 'width=600, height=400' )"><i class="icon-twitter"></i></a></li>
+          			<li class="social-item"><a class="social-icon email no-link" href="mailto:?subject=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&amp;body=http://waterford.sz<perch:mailchimp id="campaignURL" type="text" />"><i class="icon-email"></i></a></li>
+        		</ul>
+      		</div>
+    	</a>
+  	</div>
+</div>
+<perch:after>
+  	<perch:if exists="paging">
+  	<div class="full-width">
+    	<div class="paging">
+      		<p class="small text-center grey-d"><perch:if exists="not_first_page"><a class="link" href="<perch:mailchimp id="prev_url" type="hidden" encode="false" />">&#8249; Previous</a></perch:if> Page <perch:mailchimp id="current_page" type="hidden" /> of <perch:mailchimp id="number_of_pages" type="hidden" /><perch:blog id="page_links" encode="false" /><perch:if exists="not_last_page"> <a class="link" href="<perch:mailchimp id="next_url" type="hidden" encode="false" />">Next &#8250;</a></p></perch:if>
+    	</div>
+  	</div>
+  	</perch:if>
+</perch:after>
