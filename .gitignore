@@ -1,0 +1,3 @@
+*.log
+.htaccess
+perch/config/config.php
