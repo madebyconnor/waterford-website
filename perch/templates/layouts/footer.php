@@ -2,10 +2,9 @@
 <footer class="footer clear shadow-3">
   <div class="cards">
     <section class="ft-section layout-311">
-        <h1 class="ft-header medium white">Stay informed</h1>
-        <p class="small white">Don't miss out on important news from Waterford. Sign up for <a class="ft-link white" href="/news/notices">our weekly newsletter</a>!</p>
-        <button class="button-3 b-white" type="open">Sign up<i class="icon-chevron-right"></i></button>
-        <?php perch_form('newsletter-footer.html'); ?>
+        <h1 class="ft-header medium white">Our Mission Statement</h1>
+        <p class="small white"><a class="ft-link white" href="/about/mission-values.php">Waterford Kamhlaba UWCSA strives to lay the foundation for its students to become responsible citizens who have the skills, knowledge and sense of purpose to provide leadership in both Africa and the world.</a></p>
+        
     </section>
 
     <section class="ft-section layout-421">

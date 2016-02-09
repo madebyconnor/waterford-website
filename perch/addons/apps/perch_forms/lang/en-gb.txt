@@ -81,5 +81,14 @@
     "Send autoreponse": "Send autoreponse",
     "Autoresponse Template": "Autoresponse Template",
     "Response introduction text": "Response introduction text",
-    "Form \/ Delete response": "Form \/ Delete response"
+    "Form \/ Delete response": "Form \/ Delete response",
+    "Successfully marked as spam.": "Successfully marked as spam.",
+    "This is not spam": "This is not spam",
+    "Delete a response to a form.": "Delete a response to a form.",
+    "Deleting a Response": "Deleting a Response",
+    "Are you sure you wish to delete this response?": "Are you sure you wish to delete this response?",
+    "Prev": "Prev",
+    "Form \/ Export": "Form \/ Export",
+    "date": "date",
+    "ip_address": "ip_address"
 }

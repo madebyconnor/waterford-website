@@ -13,5 +13,6 @@
     "Create backup": "Create backup",
     "This does not backup your site files - just the database, CMS folder or specified content.": "This does not backup your site files - just the database, CMS folder or specified content.",
     "The checks on the right will show if your MySQL database can also be backed up. If it cannot, you will need to do this another way as all site content is stored in the database.": "The checks on the right will show if your MySQL database can also be backed up. If it cannot, you will need to do this another way as all site content is stored in the database.",
-    "Path to mysqldump": "Path to mysqldump"
+    "Path to mysqldump": "Path to mysqldump",
+    "Run backups": "Run backups"
 }

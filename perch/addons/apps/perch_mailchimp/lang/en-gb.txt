@@ -71,5 +71,6 @@
     "Campaign archive page path": "Campaign archive page path",
     "Please visit the Settings page and set your MailChimp API key and List ID": "Please visit the Settings page and set your MailChimp API key and List ID",
     "Show MailChimp on dashboard": "Show MailChimp on dashboard",
-    "Data import": "Data import"
+    "Data import": "Data import",
+    "Setting up Email Address Change webhook &mdash; done.": "Setting up Email Address Change webhook &mdash; done."
 }

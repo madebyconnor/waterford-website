@@ -5,7 +5,7 @@
 <?php perch_layout('navigation'); ?>
 
 <section class="margin-subnav" style="padding-top:1em;">
-  <div class="notice shadow-3">
+  <div class="b-gradient-vp notice shadow-3">
     <?php perch_blog_custom(array(
        'template' => 'alert_banner.html',
        'count' => 1,
