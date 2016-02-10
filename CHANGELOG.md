@@ -4,7 +4,7 @@
 ### Backend
 
  - The entire website code is now on GitHub (https://github.com/connor-baer/waterford-website) to simplify the development process and make pushing changes to the live server easier.
- - Added Let's Encrypt to securely serve the website over https.
+ - Added Let's Encrypt to securely serve the website over HTTPS.
  - Perch updated.
 
 
