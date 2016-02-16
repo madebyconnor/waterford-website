@@ -5,7 +5,6 @@
         'flat'=>true,
         'include-hidden'=>true
     ));
-
 	perch_blog_custom(array(
   		'template'=>'blog/sitemap.html',
   		'sort'=>'postDateTime',
