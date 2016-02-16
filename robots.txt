@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: 
+Disallow: /perch/
+Disallow: /.gitignore
+Disallow: /.htaccess
+Disallow: /README.md
+Disallow: /NOTES.md
+Disallow: /CHANGELOG.md
+Sitemap: https://waterford.sz/sitemap.xml
