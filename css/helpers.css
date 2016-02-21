@@ -43,6 +43,10 @@
   margin: 0 auto;
 }
 
+.mv {
+  max-width: var(--max-width);
+}
+
 .margin-top-05 {
   margin-top: 0.5em;
 }
