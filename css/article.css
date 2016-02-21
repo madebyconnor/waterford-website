@@ -17,14 +17,7 @@
   margin: 0 auto;
   height: 100%;
   position: relative;
-  overflow: hidden;
-
-/*  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;*/
-  
+  overflow: hidden;  
   z-index: 10;
 }
 
@@ -114,7 +107,7 @@
 }
 
 #article blockquote a, #article blockquote p a {
-  color: var(--blue);
+  color: var(--tq);
 }
 
 #article blockquote cite a {
@@ -132,9 +125,9 @@
 }
 
 #article blockquote, #article blockquote p {
-  font-size: 1.125em;
-  line-height: 1.5em;
-  color: var(--blue);
+  font-size: 1.1em;
+  line-height: 1.4em;
+  color: var(--tq);
   font-family: var(--serif);
 }
 

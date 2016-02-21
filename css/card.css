@@ -49,27 +49,8 @@
   transition: transform var(--ts-m);
 }
 
-.card-image:after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  z-index: 0;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  content: '';
-  transition: opacity var(--ts-m);
-}
-
-.card-3-hover:hover .card-image:after {
-  opacity: 0.55;
-}
-
 .card-3-hover:hover .card-image {
-  transform: scale(1.075);
+  transform: scale(1.1);
 }
 
 

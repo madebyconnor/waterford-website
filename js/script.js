@@ -142,7 +142,7 @@ if ($('#article')) {
  * Cache
  */
 var $content = $('header .hero-title-ctnr')
-  , $blur    = $('header .hero-overlay')
+  // , $blur    = $('header .hero-overlay')
   , wHeight  = $(window).height();
 
 $(window).on('resize', function(){
@@ -207,18 +207,18 @@ Scroller.prototype = {
     /**
      * Do The Dirty Work Here
      */
-    var slowScroll = currentScrollY / 9
-      , blurScroll = currentScrollY * 2;
+    var slowScroll = currentScrollY / 8;
+      // , blurScroll = currentScrollY * 2;
 
-    // $content.css({
-    //   'transform'         : 'translateY(-' + slowScroll + 'px)',
-    //   '-moz-transform'    : 'translateY(-' + slowScroll + 'px)',
-    //   '-webkit-transform' : 'translateY(-' + slowScroll + 'px)'
-    // });
-
-    $blur.css({
-      'opacity' : blurScroll / wHeight
+    $content.css({
+      'transform'         : 'translateY(-' + slowScroll + 'px)',
+      '-moz-transform'    : 'translateY(-' + slowScroll + 'px)',
+      '-webkit-transform' : 'translateY(-' + slowScroll + 'px)'
     });
+
+    // $blur.css({
+    //   'opacity' : blurScroll / wHeight
+    // });
   }
 };
 

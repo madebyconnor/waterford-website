@@ -1,5 +1,5 @@
 .footer {
-  background: var(--gradient-bt);
+  background: var(--gradient-vp);
   color: var(--white);
   font-family: var(--sans-serif);
   /* Footer has no height if not set */
@@ -23,7 +23,7 @@
 }
 
 .ft-link:hover {
-  color: var(--grey-l);
+  color: var(--grey-l)
 }
 
 .ft-social {
