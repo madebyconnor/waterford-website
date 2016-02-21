@@ -1,6 +1,6 @@
 </head>
-<body class="m0a">
-  <nav class="globalnav m0a" id="globalnav" role="navigation">
+<body class="m0a mv">
+  <nav class="globalnav m0a mv" id="globalnav" role="navigation">
     <div class="gn-content">
       <div id="js-overlay-sidenav" class="overlay"></div>
 
@@ -39,7 +39,7 @@
       <!-- Search -->
       <div class="gn-search gn-search-form">
         <div id="js-overlay-search" class="overlay"></div>
-        <div class="gn-search-wrapper">
+        <div class="gn-search-wrapper mv m0a">
           <?php perch_search_form(); ?>
           <a class="js-search-close search-close" title="Close (esc)">×</a>
         </div>

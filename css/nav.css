@@ -8,6 +8,7 @@
   right: 0;
   top: 0;
   z-index: 8775309;
+  max-width: var(--max-width);
 }
 
 .gn-content {
@@ -35,7 +36,6 @@
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
   height: 500em;
   width: 100vw;
   display: none;
@@ -217,6 +217,8 @@
     width: 100vw;
     z-index: 8975309;
     top: -9999px;
+    max-width: var(--max-width);
+    margin: 0 auto;
   }
 
   /* show other sections on hover */
