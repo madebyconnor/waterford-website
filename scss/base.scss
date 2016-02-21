@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+
+input, textarea {
+  -webkit-appearance: none!important;
+  border-radius: 0!important;
+  background: none;
+}
+
+#min-height {
+  min-height: 80vh;
+  padding-top: 2.8em;
+  font-family: var(--sans-serif);
+}
+
+.margin-subnav {
+  margin-top: 2em !important;
+}
+
+header#margin-subnav:not(.no-margin-subnav) {
+  margin-top: 2em !important;
+}
+
+.margin-footer {
+  margin-bottom: 2em !important;
+}
+
+@media (--tablet-l) {
+  .margin-subnav {
+    margin-top: 0 !important;
+  }
+
+  header#margin-subnav:not(.no-margin-subnav) {
+    margin-top: 0 !important;
+  }
+}
+
+
+
+
+/* LAYOUTS */
+
+.layout-221, .layout-311 {
+  width: 50%;
+  float: left;
+}
+
+.layout-331, .layout-321 {
+  width: 33.3%;
+  float: left;
+}
+
+.layout-421 {
+  width: 25%;
+  float: left;
+}
+
+
+@media (--tablet-p) {
+  .layout-311 {
+    width: 100%;
+  }
+
+  .layout-321, .layout-421 {
+    width: 50%;
+  }
+}
+
+
+@media (--mobile) {
+  .layout-221, .layout-331, .layout-321, .layout-421 {
+    width: 100%;
+  }
+}
+
+
+
+
+/* BUTTONS */
+
+.button-3, input[type="submit"] {
+  display: block;
+  outline: none;
+  font-size: 0.83em;
+  font-family: var(--sans-serif);
+  font-weight: var(--sans-serif-thick);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.12em;
+  padding: 1em 2em;
+  border: none;
+  box-shadow: var(--shadow-three);
+  transition: box-shadow var(--ts-s), background-color var(--ts-s), color var(--ts-s);
+}
+
+.button-3.b-tq, input[type="submit"].b-tq  {
+  color: var(--white);
+}
+
+.button-3.b-white, input[type="submit"].b-white {
+  color: var(--grey-d);
+}
+
+.button-3.b-tq:hover, .button-3.b-tq:active, .button-3.b-tq:focus, input[type="submit"].b-tq:hover, input[type="submit"].b-tq:focus, input[type="submit"].b-tq:active {
+  box-shadow: var(--shadow-six);
+  background-color: var(--tq-l);
+  color: var(--white);
+}
+
+.button-3.b-white:hover, .button-3.b-white:active, .button-3.b-white:focus, input[type="submit"].b-white:hover, input[type="submit"].b-white:focus, input[type="submit"].b-white:active {
+  box-shadow: var(--shadow-six);
+  color: var(--tq-l);
+}
+
+
+
+
+/* ICONS */
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  outline: none;
+}
+
+.icon-chevron-right, .icon-chevron-left {
+  font-size: 0.75em;
+}
+
+
+
+
+/* SOCIAL */
+
+ul#social {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+#social .social-item {
+  display: inline;
+  background: none;
+  padding: 0;
+}
+
+#social .social-icon {
+  color: var(--grey-m);
+  padding: 0.2em;
+  text-decoration: none;
+  box-shadow: none;
+  transition: color var(--ts-s);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.social-icon:hover, .social-icon:active, .social-icon:focus {
+  background: none!important;
+}
+
+.email:hover, .email:active, .email:focus {
+  color: var(--pink-l)!important;
+}
+
+.facebook:hover, .facebook:active, .facebook:focus {
+  color: #306199!important;
+}
+
+.twitter:hover, .twitter:active, .twitter:focus {
+  color: #26c4f1!important;
+}
+
+.googleplus:hover, .googleplus:active, .googleplus:focus {
+  color: #dd4b39!important;
+}
+
+.youtube:hover, .youtube:active, .youtube:focus {
+  color: #bb0000!important;
+}
+
+.linkedin:hover, .linkedin:active, .linkedin:focus {
+  color: #007bb6!important;
+}
+
+
+
+
+/* VIDEOS & GALLERY */
+
+.video::after {
+  content: none!important;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-hero {
+  background: var(--grey-d);
+  position: relative;
+  height: 15rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-hero:hover .gallery-image {
+  transform: scale(1.05);
+}
+
+
+
+
+/* PAGING */
+
+.paging {
+  padding: 1em;
+}
+
+.paging a {
+  text-decoration: none;
+  color: var(--tq);
+  transition: color var(--ts-s);
+}
+
+.paging a:hover {
+  color: var(--tq-l);
+}
+
+
+
+
+/* BROWSER UPDATE */
+
+body .buorg {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background: #bb0000;
+  text-align: center;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif; 
+  color: #eeeeee;
+  font-size: 18px;
+  z-index: 9000000;
+  line-height: 24px;
+}
+
+body .buorg div {
+  padding: 16px 24px;
+}
+
+body .buorg a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+body #buorgclose {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  height: 20px;
+  width: 12px;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 0;
+}

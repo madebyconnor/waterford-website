@@ -1,0 +1,44 @@
+{
+  "name": "waterford-website",
+  "version": "2.2.0",
+  "description": "A modern and responsive website for Waterford Kamhlaba UWC.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connor-baer/waterford-website.git"
+  },
+  "keywords": [
+    "website",
+    "perch",
+    "cms",
+    "waterford",
+    "kamhlaba",
+    "uwc"
+  ],
+  "author": "Connor Bär",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/connor-baer/waterford-website/issues"
+  },
+  "homepage": "https://waterford.sz",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-myth": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.2",
+    "gulp-watch": "^4.3.5",
+    "jshint": "^2.9.1"
+  }
+}

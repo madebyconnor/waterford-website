@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, height=device-height">
 	<link rel="author" href="humans.txt" />
-	<link rel="stylesheet" href="/dist/style.css">
+	<link rel="stylesheet" href="/dist/all.min.css">
 	<link rel=" icon" href="/favicon.ico?v=2" type="image/x-icon" />
 
 	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/icon/apple-touch-icon-180x180-precomposed.png">
