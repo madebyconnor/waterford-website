@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800|Roboto+Slab:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800|Roboto+Slab:400,700);
 
 /* HERO */
 
@@ -21,11 +21,6 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-  /*  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;*/
   z-index: 10;
 }
 
@@ -119,7 +114,7 @@
 
 #article blockquote a,
 #article blockquote p a {
-  color: #115bb0;
+  color: #00aaa5;
 }
 
 #article blockquote cite a {
@@ -138,9 +133,9 @@
 
 #article blockquote,
 #article blockquote p {
-  font-size: 1.125em;
-  line-height: 1.5em;
-  color: #115bb0;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  color: #00aaa5;
   font-family: "Roboto Slab", serif;
 }
 
@@ -709,30 +704,10 @@ body #buorgclose {
   transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.card-image:after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  z-index: 0;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  content: '';
-  -webkit-transition: opacity 0.35s cubic-bezier(0, 0, 0.2, 1);
-  transition: opacity 0.35s cubic-bezier(0, 0, 0.2, 1);
-}
-
-.card-3-hover:hover .card-image:after {
-  opacity: 0.55;
-}
-
 .card-3-hover:hover .card-image {
-  -webkit-transform: scale(1.075);
-  -ms-transform: scale(1.075);
-      transform: scale(1.075);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+      transform: scale(1.1);
 }
 
 .card-header {
@@ -887,8 +862,8 @@ body #buorgclose {
 }
 
 .footer {
-  background: -webkit-linear-gradient(left, #115bb0, #00aaa5);
-  background: linear-gradient(to right, #115bb0, #00aaa5);
+  background: -webkit-linear-gradient(left, #741669, #ad1644);
+  background: linear-gradient(to right, #741669, #ad1644);
   color: #ffffff;
   font-family: "Open Sans", "Helvetica", sans-serif;
   /* Footer has no height if not set */
