@@ -1,12 +1,14 @@
-# Perch Specific
-*.log
-.htaccess
-perch/config/*
-perch/resources/*
-css/*
-perchtest/*
+# General
 NOTES.md
 gulpfile.js
+node_modules/*
+*.log
+.htaccess
+
+# Perch Specific
+perch/config/*
+perch/resources/*
+perchtest/*
 icons-reference.html
 perch/addons/apps/perch_backup/backup/*
 
