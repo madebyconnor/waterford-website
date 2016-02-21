@@ -15,14 +15,14 @@ h1 {
   font-family: var(--serif);
   font-size: 2.44em;
   font-weight: var(--serif-thick);
-  line-height: 1.25em;
+  line-height: 1.15em;
   text-transform: capitalize;
 }
 
 h2, h3, h4, h5, h6 {
   font-family: var(--sans-serif);
   font-weight: var(--sans-serif-thin);
-  line-height: 1.25em;
+  line-height: 1.15em;
   color: var(--blue);
 }
 
@@ -55,7 +55,7 @@ p {
   font-family: var(--sans-serif);
   font-size: 1em;
   font-weight: var(--sans-serif-thin);
-  line-height: 1.8em;
+  line-height: 1.7em;
 }
 
 a.link {
@@ -99,17 +99,17 @@ h1.large {
 
 p.small {
   font-size: 0.8em;
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 
 p.medium {
   font-size: 0.9em;
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 
 p.large {
   font-size: 1em;
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 
 p.date {
