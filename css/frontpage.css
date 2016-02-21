@@ -12,6 +12,7 @@
 	width: 100%;
 	height: 86.5vh;
 	min-height: 33rem;
+  max-height: 58rem;
 	border: 0.5em solid var(--background-color);
 }
 
