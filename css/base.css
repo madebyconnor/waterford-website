@@ -94,7 +94,7 @@ header#margin-subnav:not(.no-margin-subnav) {
   transition: box-shadow var(--ts-s), background-color var(--ts-s), color var(--ts-s);
 }
 
-.button-3.b-pink, input[type="submit"].b-pink  {
+.button-3.b-tq, input[type="submit"].b-tq  {
   color: var(--white);
 }
 
@@ -102,9 +102,9 @@ header#margin-subnav:not(.no-margin-subnav) {
   color: var(--grey-d);
 }
 
-.button-3.b-pink:hover, .button-3.b-pink:active, .button-3.b-pink:focus, input[type="submit"].b-pink:hover, input[type="submit"].b-pink:focus, input[type="submit"].b-pink:active {
+.button-3.b-tq:hover, .button-3.b-tq:active, .button-3.b-tq:focus, input[type="submit"].b-tq:hover, input[type="submit"].b-tq:focus, input[type="submit"].b-tq:active {
   box-shadow: var(--shadow-six);
-  background-color: var(--pink-l);
+  background-color: var(--tq-l);
   color: var(--white);
 }
 
