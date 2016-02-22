@@ -81,7 +81,7 @@ textarea {
 
 /* colors */
 .f-tq .f-underline:before, .f-tq .f-underline:after {
-  background: var(--tq);
+  background: var(--pink-l);
 }
 
 .f-tq .error {

@@ -424,8 +424,8 @@ input[type="submit"] {
   transition: box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1), background-color 0.2s cubic-bezier(0, 0, 0.2, 1), color 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.button-3.b-tq,
-input[type="submit"].b-tq {
+.button-3.b-pink,
+input[type="submit"].b-pink {
   color: #ffffff;
 }
 
@@ -434,14 +434,14 @@ input[type="submit"].b-white {
   color: #646464;
 }
 
-.button-3.b-tq:hover,
-.button-3.b-tq:active,
-.button-3.b-tq:focus,
-input[type="submit"].b-tq:hover,
-input[type="submit"].b-tq:focus,
-input[type="submit"].b-tq:active {
+.button-3.b-pink:hover,
+.button-3.b-pink:active,
+.button-3.b-pink:focus,
+input[type="submit"].b-pink:hover,
+input[type="submit"].b-pink:focus,
+input[type="submit"].b-pink:active {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1), 0 1px 18px 0 rgba(0, 0, 0, 0.08), 0 3px 5px -1px rgba(0, 0, 0, 0.16);
-  background-color: #00CCC5;
+  background-color: #CB1A4F;
   color: #ffffff;
 }
 
@@ -1038,7 +1038,7 @@ textarea {
 
 .f-tq .f-underline:before,
 .f-tq .f-underline:after {
-  background: #00aaa5;
+  background: #CB1A4F;
 }
 
 .f-tq .error {
@@ -1401,8 +1401,8 @@ textarea {
   background: #646464;
 }
 
-.b-tq {
-  background-color: #00aaa5;
+.b-pink {
+  background-color: #ad1644;
 }
 
 .white {
