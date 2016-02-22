@@ -101,7 +101,7 @@
 }
 
 #article a {
-  box-shadow: inset 0 -0.2em 0 #00CCC5;
+  box-shadow: inset 0 -0.2em 0 #CB1A4F;
   color: #115bb0;
   text-decoration: none;
   -webkit-transition: background 0.2s cubic-bezier(0, 0, 0.2, 1), color 0.2s cubic-bezier(0, 0, 0.2, 1);
@@ -122,7 +122,7 @@
 }
 
 #article a:hover {
-  background: #00CCC5;
+  background: #CB1A4F;
   color: #ffffff;
 }
 
