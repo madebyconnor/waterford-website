@@ -2,8 +2,34 @@
 NOTES.md
 gulpfile.js
 node_modules/*
+
+# OS or Editor folders
+.DS_Store
+._*
+ehthumbs.db
+Icon?
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+.idea
+
+# File types
+*.diff
+*.err
+*.orig
 *.log
-.htaccess
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
 
 # Perch Specific
 perch/config/*
@@ -12,14 +38,10 @@ perchtest/*
 icons-reference.html
 perch/addons/apps/perch_backup/backup/*
 
-# OS Generated
-.DS_Store*
-ehthumbs.db
-Icon?
-Thumbs.db
-*.swp
+
 
 # Security
 .well-known/*
 __github-updater.php
 ___github-log.txt
+.htaccess
