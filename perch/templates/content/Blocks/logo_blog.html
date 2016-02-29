@@ -1,7 +1,11 @@
 <div class="clear">
 	<div class="layout-331">
+		<perch:if exists="link">
 		<a class="img-link" href="<perch:blog id="link" type="text" label="Link URL" help="An optional URL to the company or an other website." />">
+		</perch:if>
 			<img class="logo" src="<perch:blog id="logo" type="image" width="400" label="Logo" required="true" />" />
+		<perch:if exists="link">
 		</a>
+		</perch:if>
 	</div>
 </div>
