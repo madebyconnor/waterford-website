@@ -69,11 +69,7 @@ a.link:hover {
   text-decoration: underline;
 }
 
-a.no-link {
-  text-decoration: none;
-}
-
-a.no-link:hover {
+a.no-link, a.no-link:hover {
   text-decoration: none;
 }
 

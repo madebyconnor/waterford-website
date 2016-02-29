@@ -148,6 +148,14 @@
   content: "— ";
 }
 
+#article .img-link, #article .img-link:hover {
+  text-decoration: none;
+  background: none;
+  box-shadow: none;
+  height: 100%;
+  cursor: pointer;
+}
+
 
 /* BLOCKS */
 
@@ -196,7 +204,7 @@
 .logo {
   margin-top: 1.5em;
   width: 100%;
-
+  cursor: pointer;
 }
 
 #article .images a {
