@@ -94,8 +94,6 @@ if ($('.sliders')) {
     touchThreshold: 7,
     autoplaySpeed: 4000,
     infinite: true,
-    pauseOnHover: false,
-    pauseOnDotsHover: true
   });
 };
 
