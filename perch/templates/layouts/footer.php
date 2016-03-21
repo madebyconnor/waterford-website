@@ -39,7 +39,7 @@
 
 
     <section class="footer-bottom cards">
-        <p class="grey-l">&#9400; <?php echo date('Y'); ?> Waterford Kamhlaba UWCSA. All rights reserved. &#9679; <a href="/disclaimer.php" class="no-link white">Disclaimer</a> &#9679; Designed and developed by <a href="/creators.php" class="no-link white">two students:</a> <a href="http://connorbaer.org/" class="no-link white">Connor Bär</a> and <a href="http://nicolai.io/" class="no-link white">Nicolai Davies</a>.</p>
+        <p class="grey-l">&#9400; <?php echo date('Y'); ?> Waterford Kamhlaba UWCSA. All rights reserved. &#9679; <a href="/disclaimer.php" class="no-link white">Disclaimer</a> &#9679; Designed and developed by <a href="/creators.php" class="no-link white">two students:</a> <a href="http://connorbaer.io/" class="no-link white">Connor Bär</a> and <a href="http://nicolai.io/" class="no-link white">Nicolai Davies</a>.</p>
     </section>
 
   </footer>
