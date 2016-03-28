@@ -6,55 +6,25 @@
   <p><span style="font-weight:700">Bulleted List:</span> <span style="color:#115bb0">- </span><span style="font-style:italic">text</span>; <span style="font-weight:700">Numbered List:</span> <span style="color:#115bb0">1. </span><span style="font-style:italic">text</span></p>
 </perch:help>
 
-<div <perch:if exists="sidebar">id="hasSidebar"</perch:if> class="m0a article-wrapper">
-  <div id="article">
-    <span itemprop"articleBody">
+<perch:template path="content/Blocks/text.html" />
 
-      <perch:template path="content/Blocks/text.html" />
-
-      <perch:blocks>
-        <perch:block type="oneimage" label="One image">
-          <perch:template path="content/Blocks/one_image.html" />
-        </perch:block>
-        <perch:block type="twoimage" label="Two images">
-          <perch:template path="content/Blocks/two_images.html" />
-        </perch:block>
-        <perch:block type="threeimage" label="Three images">
-          <perch:template path="content/Blocks/three_images.html" />
-        </perch:block>
-        <perch:block type="logo" label="Logo">
-          <perch:template path="content/Blocks/logo.html" />
-        </perch:block>
-        <perch:block type="video" label="YouTube video">
-          <perch:template path="content/Blocks/youtube_video.html" />
-        </perch:block>
-        <perch:block type="text" label="Text">
-        	<perch:template path="content/Blocks/text.html" />
-        </perch:block>
-      </perch:blocks>
-
-    </span>
-    <!-- Social -->
-    <div class="article-footer text-center">
-      <ul id="social">
-        <li class="social-item"><a class="social-icon facebook no-link" href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=<?php perch_page_url(); ?>)', 'Facebook', 'width=600, height=400' )"><i class="icon-facebook"></i></a></li>
-        <li class="social-item"><a class="social-icon twitter no-link" href="javascript:window.open('http://twitter.com/share?text=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&url=<?php perch_page_url(); ?>', 'Twitter', 'width=600, height=400' )"><i class="icon-twitter"></i></a></li>
-        <li class="social-item"><a class="social-icon email no-link" href="mailto:?subject=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&amp;body=<?php perch_page_url(); ?>"><i class="icon-email"></i></a></li>
-      </ul>
-    </div>
-  </div>
-
-  <perch:if exists="sidebar">
-    <div id="sidebar">
-      <h4>Related links</h4>
-      <ul>
-  </perch:if>
-      <perch:repeater id="sidebar" label="Sidebar links" divider-before="Sidebar">
-        <li><a href="<perch:content id="sidebarlink" type="url" label="Link"required="true" help="Add the link." />"><perch:content id="sidebartext" type="text" label="Name"required="true" help="Add the name." title="true"/></a></li>
-      </perch:repeater>
-  <perch:if exists="sidebar">  
-      </ul>
-    </div>  
-  </perch:if>
-
-</div>
+<perch:blocks>
+  <perch:block type="oneimage" label="One image">
+    <perch:template path="content/Blocks/one_image.html" />
+  </perch:block>
+  <perch:block type="twoimage" label="Two images">
+    <perch:template path="content/Blocks/two_images.html" />
+  </perch:block>
+  <perch:block type="threeimage" label="Three images">
+    <perch:template path="content/Blocks/three_images.html" />
+  </perch:block>
+  <perch:block type="logo" label="Logo">
+    <perch:template path="content/Blocks/logo.html" />
+  </perch:block>
+  <perch:block type="video" label="YouTube video">
+    <perch:template path="content/Blocks/youtube_video.html" />
+  </perch:block>
+  <perch:block type="text" label="Text">
+  	<perch:template path="content/Blocks/text.html" />
+  </perch:block>
+</perch:blocks>

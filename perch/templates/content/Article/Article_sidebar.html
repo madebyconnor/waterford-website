@@ -1,0 +1,15 @@
+<perch:help>
+</perch:help>
+
+<div class="hidden"><perch:content id="sidebar" type="checkbox" label="Display sidebar" value="hasSidebar" /></div>
+
+<perch:if exists="sidebar">
+  <div id="sidebar">
+    <h4>Related links</h4>
+    <ul>
+    <perch:repeater id="sidebarlinks" label="Sidebar links">
+      <li><a href="<perch:content id="sidebarlink" type="url" label="Link"required="true" help="Add the link." />"><perch:content id="sidebartext" type="text" label="Name"required="true" help="Add the name." title="true"/></a></li>
+    </perch:repeater>
+    </ul>
+  </div>  
+</perch:if>

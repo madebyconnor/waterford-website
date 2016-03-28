@@ -42,14 +42,21 @@
 /* SIDEBAR */
 
 #sidebar {
-  width: 17%;
+  width: 24%;
   float: left;
   border-left: 0.1em solid grey;
   padding-left: 1em;
   margin-left: 3%;
+  margin-top: 0.8em;
 }
 
+#hasSidebar .article-wrapper {
+  max-width: var(--sidebar-width);
+}
 
+#hasSidebar .hero-title-ctnr {
+  max-width: var(--sidebar-width);
+}
 
 
 
@@ -68,15 +75,11 @@
   max-width: var(--article-width);
 }
 
-#hasSidebar {
-  max-width: var(--sidebar-width);
-}
-
 #article {
   float: left;
   height: 100%;
   overflow: hidden;
-  width: 80%;
+  width: 73%;
   margin-bottom: 1rem;
   max-width: var(--article-width);
 }
