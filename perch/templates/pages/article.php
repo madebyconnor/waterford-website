@@ -24,17 +24,7 @@
 
 <section>
   <div class="article-background">
-    <div id="article" class="m0a">
-      <span itemprop"articleBody"><?php perch_content('Content'); ?></span>
-      <!-- Social -->
-      <div class="article-footer text-center">
-        <ul id="social">
-          <li class="social-item"><a class="social-icon facebook no-link" href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=<?php perch_page_url(); ?>)', 'Facebook', 'width=600, height=400' )"><i class="icon-facebook"></i></a></li>
-          <li class="social-item"><a class="social-icon twitter no-link" href="javascript:window.open('http://twitter.com/share?text=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&url=<?php perch_page_url(); ?>', 'Twitter', 'width=600, height=400' )"><i class="icon-twitter"></i></a></li>
-          <li class="social-item"><a class="social-icon email no-link" href="mailto:?subject=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&amp;body=<?php perch_page_url(); ?>"><i class="icon-email"></i></a></li>
-        </ul>
-      </div>
-    </div>
+    <?php perch_content('Content'); ?>
   </div>
 </section>
 </span>

@@ -16,7 +16,7 @@
 }
 
 .hero-title-ctnr {
-  max-width: 50rem;
+  max-width: 60rem;
   margin: 0 auto;
   height: 100%;
   position: relative;
@@ -40,6 +40,16 @@
   z-index: 5;
 }
 
+/* SIDEBAR */
+
+#sidebar {
+  width: 17%;
+  float: left;
+  border-left: 0.1em solid grey;
+  padding-left: 1em;
+  margin-left: 3%;
+}
+
 /* CONTENT */
 
 .article-background {
@@ -50,12 +60,22 @@
   padding: 1.5rem;
 }
 
+.article-wrapper {
+  width: 100%;
+  max-width: 60rem;
+}
+
+#hasSidebar {
+  max-width: 76.2rem;
+}
+
 #article {
+  float: left;
   height: 100%;
   overflow: hidden;
-  width: 100%;
-  max-width: 50rem;
+  width: 80%;
   margin-bottom: 1rem;
+  max-width: 60rem;
 }
 
 #article h2,
@@ -172,7 +192,7 @@
 }
 
 .image-wrapper {
-  max-width: 50rem;
+  max-width: 60rem;
   display: block;
   position: relative;
   height: 0;
@@ -190,15 +210,12 @@
   background-position: center center!important;
   background-size: cover !important;
   -webkit-transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-  transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
   transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-  transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .image:hover {
   -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-      transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .image-left,
@@ -568,8 +585,7 @@ ul#social {
 
 .gallery-hero:hover .gallery-image {
   -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-      transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* PAGING */
@@ -679,7 +695,7 @@ body #buorgclose {
 .card-3 {
   background-color: #ffffff;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 3px -2px rgba(0, 0, 0, 0.16), 0 1px 8px 0 rgba(0, 0, 0, 0.08);
-  max-width: 50rem;
+  max-width: 60rem;
   overflow: hidden;
   -webkit-transition: box-shadow 0.35s cubic-bezier(0, 0, 0.2, 1);
   transition: box-shadow 0.35s cubic-bezier(0, 0, 0.2, 1);
@@ -708,15 +724,12 @@ body #buorgclose {
   position: relative;
   width: 100%;
   -webkit-transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-  transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
   transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-  transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .card-3-hover:hover .card-image {
   -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-      transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .card-header {
@@ -786,6 +799,7 @@ body #buorgclose {
   font-style: normal !important;
   font-weight: normal !important;
   -webkit-font-feature-settings: normal,;
+  -moz-font-feature-settings: normal,;
   font-feature-settings: normal,;
   font-variant: normal !important;
   text-transform: none !important;
@@ -801,6 +815,7 @@ body #buorgclose {
   font-style: normal !important;
   font-weight: normal !important;
   -webkit-font-feature-settings: normal,;
+  -moz-font-feature-settings: normal,;
   font-feature-settings: normal,;
   font-variant: normal !important;
   text-transform: none !important;
@@ -1182,8 +1197,7 @@ textarea {
 
 .sliders-hero:hover .card-image {
   -webkit-transform: scale(1.075);
-  -ms-transform: scale(1.075);
-      transform: scale(1.075);
+  transform: scale(1.075);
 }
 
 .sliders-content {
@@ -1445,7 +1459,7 @@ textarea {
 
 .full-width {
   width: 95%;
-  max-width: 50rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -1510,13 +1524,10 @@ textarea {
   left: 0;
   right: 0;
   -webkit-transform: translateY(-105%);
-  -ms-transform: translateY(-105%);
-      transform: translateY(-105%);
+  transform: translateY(-105%);
   z-index: 9075309;
   -webkit-transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-  transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
   transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-  transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
 }
 
 #globalnav .gn-search-wrapper {
@@ -1530,8 +1541,7 @@ textarea {
   height: 4.8em;
   width: 100%;
   -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-      transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 #globalnav .f-search {
@@ -1868,12 +1878,9 @@ textarea {
     top: 0;
     margin-top: 2.8em;
     -webkit-transform: translateX(-105%);
-    -ms-transform: translateX(-105%);
-        transform: translateX(-105%);
+    transform: translateX(-105%);
     -webkit-transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-    transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
     transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-    transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
     width: 85%;
     overflow-y: scroll;
   }
@@ -1930,8 +1937,7 @@ textarea {
 
   .gn-nav-show .gn-nav {
     -webkit-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-        transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
 
@@ -1945,21 +1951,17 @@ textarea {
 
 .headroom {
   -webkit-transition: -webkit-transform 200ms linear;
-  transition: -webkit-transform 200ms linear;
   transition: transform 200ms linear;
-  transition: transform 200ms linear, -webkit-transform 200ms linear;
 }
 
 .headroom--pinned {
   -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-      transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .headroom--unpinned {
   -webkit-transform: translateY(-103%);
-  -ms-transform: translateY(-103%);
-      transform: translateY(-103%);
+  transform: translateY(-103%);
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -2546,7 +2548,7 @@ table {
   background-color: #ffffff;
   margin: 1.5em auto;
   width: 95%;
-  max-width: 50rem;
+  max-width: 60rem;
 }
 
 input[type="search"] {
@@ -2716,8 +2718,7 @@ input[type="search"] {
   padding: 0;
   position: absolute;
   -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 
 .slick-prev:before,
@@ -2760,8 +2761,7 @@ input[type="search"] {
   bottom: 1rem;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .slick-dots li {

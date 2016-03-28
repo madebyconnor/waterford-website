@@ -39,6 +39,18 @@
 
 
 
+/* SIDEBAR */
+
+#sidebar {
+  width: 17%;
+  float: left;
+  border-left: 0.1em solid grey;
+  padding-left: 1em;
+  margin-left: 3%;
+}
+
+
+
 
 
 /* CONTENT */
@@ -51,12 +63,22 @@
   padding: 1.5rem;
 }
 
-#article {
-  height: 100%;
-  overflow: hidden;
+.article-wrapper {
   width: 100%;
   max-width: var(--article-width);
+}
+
+#hasSidebar {
+  max-width: var(--sidebar-width);
+}
+
+#article {
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  width: 80%;
   margin-bottom: 1rem;
+  max-width: var(--article-width);
 }
 
 #article h2, #article h3, #article h4, #article h5, #article h6 {
