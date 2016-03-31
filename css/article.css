@@ -42,21 +42,57 @@
 /* SIDEBAR */
 
 #sidebar {
-  width: 24%;
-  float: left;
-  border-left: 0.1em solid grey;
-  padding-left: 1em;
-  margin-left: 3%;
-  margin-top: 0.8em;
+  margin: 0.8em 0;
 }
 
-#hasSidebar .article-wrapper {
+#hasSidebar #article {
   max-width: var(--sidebar-width);
 }
 
 #hasSidebar .hero-title-ctnr {
   max-width: var(--sidebar-width);
 }
+
+#article #sidebar h1 {
+  color: var(--grey-m);
+  font-size: 1.3em;
+  margin-top: 0;
+}
+
+#article #sidebar p {
+  margin-top: 0.3em;
+}
+
+#article #sidebar p:nth-child(2) {
+  margin-top: 0.6em;
+}
+
+#article #sidebar p a {
+  color: var(--grey-m);
+  box-shadow: none;
+  text-decoration: none;
+  transition: background var(--ts-s), color var(--ts-s);
+}
+
+#article #sidebar p a:hover {
+  background: var(--pink-l);
+  color: var(--white);
+}
+
+@media (--mobile-min) {
+  #hasSidebar .article-wrapper {
+    width: 74%;
+  }
+
+  #sidebar {
+    width: 22%;
+    float: left;
+    border-left: 0.08em solid var(--grey-m);
+    padding-left: 1em;
+    margin-left: 4%;
+  }
+}
+
 
 
 
@@ -70,16 +106,16 @@
   padding: 1.5rem;
 }
 
-.article-wrapper {
+#article {
   width: 100%;
   max-width: var(--article-width);
 }
 
-#article {
+.article-wrapper {
   float: left;
   height: 100%;
   overflow: hidden;
-  width: 73%;
+  width: 100%;
   margin-bottom: 1rem;
   max-width: var(--article-width);
 }

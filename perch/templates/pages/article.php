@@ -29,8 +29,8 @@
 
 <section>
   <div class="article-background">
-    <div class="m0a article-wrapper">
-      <div id="article">
+    <div class="m0a" id="article">
+      <div class="article-wrapper">
         <span itemprop"articleBody">
           <?php perch_content('Content'); ?>
         </span>

@@ -41,8 +41,8 @@
   /*BREAKPOINTS*/
   --max-width: 100rem;
   --min-width: 95%;
-  --article-width: 60rem;
-  --sidebar-width: calc(var(--article-width)*1.37);
+  --article-width: 50rem;
+  --sidebar-width: calc(var(--article-width)*1.12);
   --card-width: 75rem;
   --desktop: 80rem;
   --tablet-l: 65rem;
@@ -74,3 +74,4 @@
 @custom-media --tablet-l all and (max-width: 65rem);
 @custom-media --tablet-p all and (max-width: 55rem);
 @custom-media --mobile all and (max-width: 40rem);
+@custom-media --mobile-min all and (min-width: 40rem);

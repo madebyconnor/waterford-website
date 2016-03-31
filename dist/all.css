@@ -16,7 +16,7 @@
 }
 
 .hero-title-ctnr {
-  max-width: 60rem;
+  max-width: 50rem;
   margin: 0 auto;
   height: 100%;
   position: relative;
@@ -43,20 +43,56 @@
 /* SIDEBAR */
 
 #sidebar {
-  width: 24%;
-  float: left;
-  border-left: 0.1em solid grey;
-  padding-left: 1em;
-  margin-left: 3%;
-  margin-top: 0.8em;
+  margin: 0.8em 0;
 }
 
-#hasSidebar .article-wrapper {
-  max-width: 82.2rem;
+#hasSidebar #article {
+  max-width: 56.00000000000001rem;
 }
 
 #hasSidebar .hero-title-ctnr {
-  max-width: 82.2rem;
+  max-width: 56.00000000000001rem;
+}
+
+#article #sidebar h1 {
+  color: #888888;
+  font-size: 1.3em;
+  margin-top: 0;
+}
+
+#article #sidebar p {
+  margin-top: 0.3em;
+}
+
+#article #sidebar p:nth-child(2) {
+  margin-top: 0.6em;
+}
+
+#article #sidebar p a {
+  color: #888888;
+  box-shadow: none;
+  text-decoration: none;
+  -webkit-transition: background 0.2s cubic-bezier(0, 0, 0.2, 1), color 0.2s cubic-bezier(0, 0, 0.2, 1);
+  transition: background 0.2s cubic-bezier(0, 0, 0.2, 1), color 0.2s cubic-bezier(0, 0, 0.2, 1);
+}
+
+#article #sidebar p a:hover {
+  background: #CB1A4F;
+  color: #ffffff;
+}
+
+@media all and (min-width: 40rem) {
+  #hasSidebar .article-wrapper {
+    width: 74%;
+  }
+
+  #sidebar {
+    width: 22%;
+    float: left;
+    border-left: 0.08em solid #888888;
+    padding-left: 1em;
+    margin-left: 4%;
+  }
 }
 
 /* CONTENT */
@@ -69,18 +105,18 @@
   padding: 1.5rem;
 }
 
-.article-wrapper {
+#article {
   width: 100%;
-  max-width: 60rem;
+  max-width: 50rem;
 }
 
-#article {
+.article-wrapper {
   float: left;
   height: 100%;
   overflow: hidden;
-  width: 73%;
+  width: 100%;
   margin-bottom: 1rem;
-  max-width: 60rem;
+  max-width: 50rem;
 }
 
 #article h2,
@@ -197,7 +233,7 @@
 }
 
 .image-wrapper {
-  max-width: 60rem;
+  max-width: 50rem;
   display: block;
   position: relative;
   height: 0;
@@ -700,7 +736,7 @@ body #buorgclose {
 .card-3 {
   background-color: #ffffff;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 3px -2px rgba(0, 0, 0, 0.16), 0 1px 8px 0 rgba(0, 0, 0, 0.08);
-  max-width: 60rem;
+  max-width: 50rem;
   overflow: hidden;
   -webkit-transition: box-shadow 0.35s cubic-bezier(0, 0, 0.2, 1);
   transition: box-shadow 0.35s cubic-bezier(0, 0, 0.2, 1);
@@ -1469,7 +1505,7 @@ textarea {
 
 .full-width {
   width: 95%;
-  max-width: 60rem;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
@@ -2558,7 +2594,7 @@ table {
   background-color: #ffffff;
   margin: 1.5em auto;
   width: 95%;
-  max-width: 60rem;
+  max-width: 50rem;
 }
 
 input[type="search"] {
