@@ -79,6 +79,14 @@
   color: var(--white);
 }
 
+@media (--mobile) {
+  #sidebar {
+    border-top: 0.08em solid var(--grey-m);
+    padding-top: 1em;
+    clear: both;
+  }
+}
+
 @media (--mobile-min) {
   #hasSidebar .article-wrapper {
     width: 74%;
@@ -92,6 +100,8 @@
     margin-left: 4%;
   }
 }
+
+
 
 
 

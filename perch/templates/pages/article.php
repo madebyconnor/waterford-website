@@ -10,8 +10,7 @@
 <?php perch_layout('header'); ?>
 <?php perch_layout('meta'); ?>
 <?php perch_layout('navigation'); ?>
-<span <?php perch_content_custom('Sidebar', array(
-    'filter'=>'sidebar','match'=>'eq','value'=>'hasSidebar','template'=>'#/sidebarid.html')); ?> itemscope itemtype="https://schema.org/Article">
+<span <?php perch_content_custom('Sidebar', array('template'=>'#/sidebarid.html')); ?> itemscope itemtype="https://schema.org/Article">
 <header id="margin-subnav" class="b-grey-d <?php
       perch_page_attribute('headerclass', array(
         'template' => 'margin_subnav.html'

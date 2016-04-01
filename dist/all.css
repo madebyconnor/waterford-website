@@ -81,6 +81,14 @@
   color: #ffffff;
 }
 
+@media all and (max-width: 40rem) {
+  #sidebar {
+    border-top: 0.08em solid #888888;
+    padding-top: 1em;
+    clear: both;
+  }
+}
+
 @media all and (min-width: 40rem) {
   #hasSidebar .article-wrapper {
     width: 74%;
@@ -796,7 +804,7 @@ body #buorgclose {
 }
 
 .card-footer {
-  padding: 0.9rem 2rem 0.9rem;
+  padding: 0.9rem 2rem 0.7rem;
   border-top: 0.12rem solid #dddddd;
   border-bottom: 0.12rem solid #dddddd;
   overflow: hidden;
