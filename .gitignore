@@ -37,7 +37,8 @@ perch/resources/*
 perchtest/*
 icons-reference.html
 perch/addons/apps/perch_backup/backup/*
-
+_site/*
+_resources/*
 
 
 # Security
