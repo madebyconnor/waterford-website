@@ -59,10 +59,12 @@
 <perch:blog id="sidebar" type="checkbox" label="Display sidebar" value="hasSidebar" suppress="true" help="Uncheck to hide the sidebar without deleting the links." divider-before="Sidebar" order="5" />
 
 <perch:if exists="sidebar">
-  <div id="sidebar">
-    <h4>Related links</h4>
-    <perch:repeater id="sidebarlinks" label="Sidebar links" order="6" divider-after="Meta information" >
-      <p><a href="<perch:blog id="sidebarlink" type="url" label="Link URL"required="true" help="The URL to the page, website or file you are referring to." />"><perch:blog id="sidebartext" type="text" label="Link description"required="true" help="A three to five word description of the link." title="true" chars="30" append="..." count="chars" /> &#8250;</a></p>
-    </perch:repeater>
-  </div>  
+  <perch:if exists="sidebarlinks">
+    <div id="sidebar">
+      <h4>Related links</h4>
+      <perch:repeater id="sidebarlinks" label="Sidebar links" order="6" divider-after="Meta information" >
+        <p><a href="<perch:blog id="sidebarlink" type="url" label="Link URL"required="true" help="The URL to the page, website or file you are referring to." />"><perch:blog id="sidebartext" type="text" label="Link description"required="true" help="A three to five word description of the link." title="true" chars="30" append="..." count="chars" /> &#8250;</a></p>
+      </perch:repeater>
+    </div>  
+  </perch:if>
 </perch:if>
