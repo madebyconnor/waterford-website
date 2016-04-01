@@ -54,18 +54,18 @@
   max-width: 56.00000000000001rem;
 }
 
-#article #sidebar h1 {
+#article #sidebar h4 {
   color: #888888;
-  font-size: 1.3em;
   margin-top: 0;
 }
 
 #article #sidebar p {
-  margin-top: 0.3em;
+  margin-top: 0.5em;
+  line-height: 1.5em;
 }
 
 #article #sidebar p:nth-child(2) {
-  margin-top: 0.6em;
+  margin-top: 0.8em;
 }
 
 #article #sidebar p a {

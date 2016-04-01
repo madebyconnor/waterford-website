@@ -1,13 +1,13 @@
 <perch:help>
 </perch:help>
 
-<perch:content id="sidebar" type="checkbox" label="Display sidebar" value="hasSidebar" suppress="true" />
+<perch:content id="sidebar" type="checkbox" label="Display sidebar" value="hasSidebar" suppress="true" notes-before="Enter the event timings. Be as specific as possible." />
 
 <perch:if exists="sidebar">
   <div id="sidebar">
-    <h1>Related links</h1>
+    <h4>Related links</h4>
     <perch:repeater id="sidebarlinks" label="Sidebar links">
-      <p><a href="<perch:content id="sidebarlink" type="url" label="Link"required="true" help="Add the link." />"><perch:content id="sidebartext" type="text" label="Name"required="true" help="Add the name." title="true"/></a></p>
+      <p><a href="<perch:content id="sidebarlink" type="url" label="Link URL"required="true" help="The URL to the page, website or file you are referring to." urlify="true" />"><perch:content id="sidebartext" type="text" label="Link description"required="true" help="Add the name." title="true" notes-before="Enter the event timings. Be as specific as possible." /> &#8250;</a></p>
     </perch:repeater>
   </div>  
 </perch:if>
