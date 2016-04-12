@@ -190,15 +190,12 @@
   background-position: center center!important;
   background-size: cover !important;
   -webkit-transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-  transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
   transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-  transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .image:hover {
   -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-      transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .image-left,
@@ -568,8 +565,7 @@ ul#social {
 
 .gallery-hero:hover .gallery-image {
   -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-      transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* PAGING */
@@ -708,15 +704,12 @@ body #buorgclose {
   position: relative;
   width: 100%;
   -webkit-transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-  transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
   transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-  transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .card-3-hover:hover .card-image {
   -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-      transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .card-header {
@@ -786,6 +779,7 @@ body #buorgclose {
   font-style: normal !important;
   font-weight: normal !important;
   -webkit-font-feature-settings: normal,;
+  -moz-font-feature-settings: normal,;
   font-feature-settings: normal,;
   font-variant: normal !important;
   text-transform: none !important;
@@ -801,6 +795,7 @@ body #buorgclose {
   font-style: normal !important;
   font-weight: normal !important;
   -webkit-font-feature-settings: normal,;
+  -moz-font-feature-settings: normal,;
   font-feature-settings: normal,;
   font-variant: normal !important;
   text-transform: none !important;
@@ -1182,8 +1177,7 @@ textarea {
 
 .sliders-hero:hover .card-image {
   -webkit-transform: scale(1.075);
-  -ms-transform: scale(1.075);
-      transform: scale(1.075);
+  transform: scale(1.075);
 }
 
 .sliders-content {
@@ -1510,13 +1504,10 @@ textarea {
   left: 0;
   right: 0;
   -webkit-transform: translateY(-105%);
-  -ms-transform: translateY(-105%);
-      transform: translateY(-105%);
+  transform: translateY(-105%);
   z-index: 9075309;
   -webkit-transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-  transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
   transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-  transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
 }
 
 #globalnav .gn-search-wrapper {
@@ -1530,8 +1521,7 @@ textarea {
   height: 4.8em;
   width: 100%;
   -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-      transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 #globalnav .f-search {
@@ -1868,12 +1858,9 @@ textarea {
     top: 0;
     margin-top: 2.8em;
     -webkit-transform: translateX(-105%);
-    -ms-transform: translateX(-105%);
-        transform: translateX(-105%);
+    transform: translateX(-105%);
     -webkit-transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-    transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
     transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1);
-    transition: transform 0.35s cubic-bezier(0, 0, 0.2, 1), -webkit-transform 0.35s cubic-bezier(0, 0, 0.2, 1);
     width: 85%;
     overflow-y: scroll;
   }
@@ -1930,8 +1917,7 @@ textarea {
 
   .gn-nav-show .gn-nav {
     -webkit-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-        transform: translateX(0%);
+    transform: translateX(0%);
   }
 }
 
@@ -1945,21 +1931,17 @@ textarea {
 
 .headroom {
   -webkit-transition: -webkit-transform 200ms linear;
-  transition: -webkit-transform 200ms linear;
   transition: transform 200ms linear;
-  transition: transform 200ms linear, -webkit-transform 200ms linear;
 }
 
 .headroom--pinned {
   -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-      transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .headroom--unpinned {
   -webkit-transform: translateY(-103%);
-  -ms-transform: translateY(-103%);
-      transform: translateY(-103%);
+  transform: translateY(-103%);
 }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -2716,8 +2698,7 @@ input[type="search"] {
   padding: 0;
   position: absolute;
   -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 
 .slick-prev:before,
@@ -2760,8 +2741,7 @@ input[type="search"] {
   bottom: 1rem;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .slick-dots li {
