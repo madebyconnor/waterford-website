@@ -6,47 +6,65 @@
   <p><span style="font-weight:700">Bulleted List:</span> <span style="color:#115bb0">- </span><span style="font-style:italic">text</span>; <span style="font-weight:700">Numbered List:</span> <span style="color:#115bb0">1. </span><span style="font-style:italic">text</span></p>
 </perch:help>
 
+<div class="article-wrapper">
+  <span itemprop="articleBody">
 
-<!-- Social -->
-<div class="clear">
-  <p class="date float-left">
-    <time class="dt-published" datetime="<perch:blog id="postDateTime" type="date" label="Date" time="true" format="Y-m-d H:i:s" />">
-    <perch:blog id="postDateTime" type="date" time="true" format="%B %d, %Y" />
-    </time>
-    <perch:if exists="authorGivenName"> by <span class="p-author h-card" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="givenName"><perch:blog id="authorGivenName" type="hidden" /></span> <span itemprop="familyName"><perch:blog id="authorFamilyName" type="hidden" /></span></span>
-    </perch:if>
-  </p>
-  <ul id="social" class="float-right">
-    <li class="social-item"><a class="social-icon facebook no-link" href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=http://waterford.sz<perch:blog id="postURL" />', 'Facebook', 'width=600, height=400' )"><i class="icon-facebook"></i></a></li>
-    <li class="social-item"><a class="social-icon twitter no-link" href="javascript:window.open('http://twitter.com/share?text=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&url=http://waterford.sz<perch:blog id="postURL" />', 'Twitter', 'width=600, height=400' )"><i class="icon-twitter"></i></a></li>
-    <li class="social-item"><a class="social-icon email no-link" href="mailto:?subject=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&amp;body=http://waterford.sz<perch:blog id="postURL" />"><i class="icon-email"></i></a></li>
-  </ul>
+    <!-- Social -->
+    <div class="clear">
+      <p class="date float-left">
+        <time class="dt-published" datetime="<perch:blog id="postDateTime" type="date" label="Date" time="true" format="Y-m-d H:i:s" />">
+        <perch:blog id="postDateTime" type="date" time="true" format="%B %d, %Y" />
+        </time>
+        <perch:if exists="authorGivenName"> by <span class="p-author h-card" itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="givenName"><perch:blog id="authorGivenName" type="hidden" /></span> <span itemprop="familyName"><perch:blog id="authorFamilyName" type="hidden" /></span></span>
+        </perch:if>
+      </p>
+      <ul id="social" class="float-right">
+        <li class="social-item"><a class="social-icon facebook no-link" href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=http://waterford.sz<perch:blog id="postURL" />', 'Facebook', 'width=600, height=400' )"><i class="icon-facebook"></i></a></li>
+        <li class="social-item"><a class="social-icon twitter no-link" href="javascript:window.open('http://twitter.com/share?text=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&url=http://waterford.sz<perch:blog id="postURL" />', 'Twitter', 'width=600, height=400' )"><i class="icon-twitter"></i></a></li>
+        <li class="social-item"><a class="social-icon email no-link" href="mailto:?subject=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&amp;body=http://waterford.sz<perch:blog id="postURL" />"><i class="icon-email"></i></a></li>
+      </ul>
+    </div>
+    <!-- End Social -->
+
+    <perch:blog id="postTitle" type="text" label="Title" required="true" size="xl autowidth" order="1" suppress="true"/>
+
+    <perch:blog id="postDescHTML" type="textarea" label="Article" order="3" editor="markitup" markdown="true" size="xxl autowidth" required="true" count="words" notes-before="An excerpt will be created automatically from the first 50 words of the article to be displayed on the frontpage and in the newsfeed." help="In order to add photos to an article, please use one of the photo blocks below. Insert a text block after it to continue writing." />
+
+    <perch:blog id="image" type="image" label="Header photo" suppress="true" width="1440" height="1440" order="2" help="Strongly recommended for newsfeed posts! Preferably landscape format. 1500px minimum, 2500px maximum width." />
+
+    <perch:blocks order="4" >
+      <perch:block type="oneimage" label="One image">
+        <perch:template path="content/Blocks/one_image_blog.html" />
+      </perch:block>
+      <perch:block type="twoimage" label="Two images">
+        <perch:template path="content/Blocks/two_images_blog.html" />
+      </perch:block>
+      <perch:block type="threeimage" label="Three images">
+        <perch:template path="content/Blocks/three_images_blog.html" />
+      </perch:block>
+      <perch:block type="logo" label="Logo">
+        <perch:template path="content/Blocks/logo_blog.html" />
+      </perch:block>
+      <perch:block type="video" label="YouTube video">
+        <perch:template path="content/Blocks/youtube_video_blog.html" />
+      </perch:block>
+      <perch:block type="text" label="Text">
+      	<perch:template path="content/Blocks/text_blog.html" />
+      </perch:block>
+    </perch:blocks>
+
+  </span>
 </div>
-<!-- End Social -->
 
-<perch:blog id="postTitle" type="text" label="Title" required="true" size="xl autowidth" order="1" suppress="true"/>
+<perch:blog id="sidebar" type="checkbox" label="Display sidebar" value="hasSidebar" suppress="true" help="Uncheck to hide the sidebar without deleting the links." divider-before="Sidebar" order="5" />
 
-<perch:blog id="postDescHTML" type="textarea" label="Post" order="3" editor="markitup" markdown="true" size="xxl autowidth" required="true" count="words" help="An excerpt will be created automatically from the first 50 words to be displayed on the frontpage and in the newsfeed." />
-
-<perch:blog id="image" type="image" label="Header photo" suppress="true" width="1440" height="1440" order="2" help="Strongly recommended for newsfeed posts! Preferably landscape format. 1500px minimum, 2500px maximum width." />
-
-<perch:blocks divider-after="Meta information">
-  <perch:block type="oneimage" label="One image">
-    <perch:template path="content/Blocks/one_image_blog.html" />
-  </perch:block>
-  <perch:block type="twoimage" label="Two images">
-    <perch:template path="content/Blocks/two_images_blog.html" />
-  </perch:block>
-  <perch:block type="threeimage" label="Three images">
-    <perch:template path="content/Blocks/three_images_blog.html" />
-  </perch:block>
-  <perch:block type="logo" label="Logo">
-    <perch:template path="content/Blocks/logo_blog.html" />
-  </perch:block>
-  <perch:block type="video" label="YouTube video">
-    <perch:template path="content/Blocks/youtube_video_blog.html" />
-  </perch:block>
-  <perch:block type="text" label="Text">
-  	<perch:template path="content/Blocks/text_blog.html" />
-  </perch:block>
-</perch:blocks>
+<perch:if exists="sidebar">
+  <perch:if exists="sidebarlinks">
+    <div id="sidebar">
+      <h4>Related links</h4>
+      <perch:repeater id="sidebarlinks" label="Sidebar links" order="6" divider-after="Meta information" >
+        <p><a href="<perch:blog id="sidebarlink" type="url" label="Link URL"required="true" help="The URL to the page, website or file you are referring to." />"><perch:blog id="sidebartext" type="text" label="Link description"required="true" help="A three to five word description of the link." title="true" chars="30" append="..." count="chars" /> &#8250;</a></p>
+      </perch:repeater>
+    </div>  
+  </perch:if>
+</perch:if>
