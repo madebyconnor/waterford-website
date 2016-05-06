@@ -51,6 +51,11 @@
   </div>
 </section>
 
+<section class="cards">
+  <h1 class="fp-header-ctnr">Downloads</h1>
+  <?php perch_content("Files"); ?>
+</section>
+
 <section class="cards margin-footer">
   <h1 class="fp-header-ctnr">Our Partners</h1>
   <div class="card-ctnr layout-331">

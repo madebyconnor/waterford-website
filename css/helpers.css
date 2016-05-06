@@ -5,6 +5,11 @@
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+  visibility: none;
+}
+
 .clear:before {
   content: "";
   display: block;

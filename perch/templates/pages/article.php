@@ -3,10 +3,14 @@
   'template' => 'Article/Article_content.html',
   )); 
 ?>
+<?php perch_content_create('Sidebar', array(
+  'template' => 'Article/Article_sidebar.html',
+  )); 
+?>
 <?php perch_layout('header'); ?>
 <?php perch_layout('meta'); ?>
 <?php perch_layout('navigation'); ?>
-<span itemscope itemtype="https://schema.org/Article">
+<span <?php perch_content_custom('Sidebar', array('template'=>'#/sidebarid.html')); ?> itemscope itemtype="https://schema.org/Article">
 <header id="margin-subnav" class="b-grey-d <?php
       perch_page_attribute('headerclass', array(
         'template' => 'margin_subnav.html'
@@ -24,16 +28,21 @@
 
 <section>
   <div class="article-background">
-    <div id="article" class="m0a">
-      <span itemprop"articleBody"><?php perch_content('Content'); ?></span>
-      <!-- Social -->
-      <div class="article-footer text-center">
-        <ul id="social">
-          <li class="social-item"><a class="social-icon facebook no-link" href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=<?php perch_page_url(); ?>)', 'Facebook', 'width=600, height=400' )"><i class="icon-facebook"></i></a></li>
-          <li class="social-item"><a class="social-icon twitter no-link" href="javascript:window.open('http://twitter.com/share?text=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&url=<?php perch_page_url(); ?>', 'Twitter', 'width=600, height=400' )"><i class="icon-twitter"></i></a></li>
-          <li class="social-item"><a class="social-icon email no-link" href="mailto:?subject=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&amp;body=<?php perch_page_url(); ?>"><i class="icon-email"></i></a></li>
-        </ul>
+    <div class="m0a" id="article">
+      <div class="article-wrapper">
+        <span itemprop"articleBody">
+          <?php perch_content('Content'); ?>
+        </span>
+        <!-- Social -->
+        <div class="article-footer text-center">
+          <ul id="social">
+            <li class="social-item"><a class="social-icon facebook no-link" href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=<?php perch_page_url(); ?>)', 'Facebook', 'width=600, height=400' )"><i class="icon-facebook"></i></a></li>
+            <li class="social-item"><a class="social-icon twitter no-link" href="javascript:window.open('http://twitter.com/share?text=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&url=<?php perch_page_url(); ?>', 'Twitter', 'width=600, height=400' )"><i class="icon-twitter"></i></a></li>
+            <li class="social-item"><a class="social-icon email no-link" href="mailto:?subject=Take%20a%20look%20at%20this%20page%20on%20Waterford.sz&amp;body=<?php perch_page_url(); ?>"><i class="icon-email"></i></a></li>
+          </ul>
+        </div>
       </div>
+      <?php perch_content('Sidebar'); ?>
     </div>
   </div>
 </section>
