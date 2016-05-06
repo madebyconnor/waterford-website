@@ -14,14 +14,6 @@
           <h1 class="text-no-cap"><perch:blog id="postTitle" /></h1>
           <article id="article">
             <perch:blog id="postDescHTML" type="textarea" textile="true" />
-            <perch:if exists="sidebar">
-              <perch:if exists="sidebarlinks">
-                <h4>Related links</h4>
-                <perch:repeater id="sidebarlinks" label="Sidebar links">
-                  <p><a href="<perch:blog id="sidebarlink" />"><perch:blog id="sidebartext" chars="30" append="..." /> &#8250;</a></p>
-                </perch:repeater>
-              </perch:if>
-            </perch:if>
           </article>
         </div>
       </div>

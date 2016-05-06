@@ -77,7 +77,7 @@
 }
 
 .card-footer {
-  padding: 0.9rem 2rem 0.7rem;
+  padding: 0.9rem 2rem 0.9rem;
   border-top: 0.12rem solid var(--grey-l);
   border-bottom: 0.12rem solid var(--grey-l);
   overflow: hidden;
