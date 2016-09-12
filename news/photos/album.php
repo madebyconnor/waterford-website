@@ -24,9 +24,9 @@
 		<div class="card-ctnr clear">
 		    <div class="article-footer text-center">
         		<ul id="social">
-          			<li class="social-item"><a class="social-icon facebook no-link" href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=http://waterford.sz/news/photos/album.php?s=<?php perch_gallery_album_field(perch_get('s'), 'albumSlug'); ?>)', 'Facebook', 'width=600, height=400' )"><i class="icon-facebook"></i></a></li>
-          			<li class="social-item"><a class="social-icon twitter no-link" href="javascript:window.open('http://twitter.com/share?text=<?php perch_gallery_album_field(perch_get('s'), 'albumTitle'); ?>&url=http://waterford.sz/news/photos/album.php?s=<?php perch_gallery_album_field(perch_get('s'), 'albumSlug'); ?>', 'Twitter', 'width=600, height=400' )"><i class="icon-twitter"></i></a></li>
-          			<li class="social-item"><a class="social-icon email no-link" href="mailto:?subject=<?php perch_gallery_album_field(perch_get('s'), 'albumTitle'); ?>&amp;body=http://waterford.sz/news/photos/album.php?s=<?php perch_gallery_album_field(perch_get('s'), 'albumSlug'); ?>"><i class="icon-email"></i></a></li>
+          			<li class="social-item"><a class="social-icon facebook no-link" href="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=https://waterford.sz/news/photos/album.php?s=<?php perch_gallery_album_field(perch_get('s'), 'albumSlug'); ?>)', 'Facebook', 'width=600, height=400' )"><i class="icon-facebook"></i></a></li>
+          			<li class="social-item"><a class="social-icon twitter no-link" href="javascript:window.open('http://twitter.com/share?text=<?php perch_gallery_album_field(perch_get('s'), 'albumTitle'); ?>&url=https://waterford.sz/news/photos/album.php?s=<?php perch_gallery_album_field(perch_get('s'), 'albumSlug'); ?>', 'Twitter', 'width=600, height=400' )"><i class="icon-twitter"></i></a></li>
+          			<li class="social-item"><a class="social-icon email no-link" href="mailto:?subject=<?php perch_gallery_album_field(perch_get('s'), 'albumTitle'); ?>&amp;body=https://waterford.sz/news/photos/album.php?s=<?php perch_gallery_album_field(perch_get('s'), 'albumSlug'); ?>"><i class="icon-email"></i></a></li>
         		</ul>
     		</div>
   		</div>   
